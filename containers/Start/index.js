@@ -106,14 +106,15 @@ function Start() {
 
   return (
     <Layout title="QuizStorm">
+      <div className='px-2'>
+        <Ads
+          data-ad-format="auto"
+          data-ad-slot="8433272954"
+          data-full-width-responsive="true"
+        />
+      </div>
       <div className="flex flex-col items-center pt-10 pb-10 px-2 w-full">
-        <div>
-          <Ads
-            data-ad-format="auto"
-            data-ad-slot="8433272954"
-            data-full-width-responsive="true"
-          />
-        </div>
+
 
         {/* Category Scroll Filter */}
         <div className="flex items-center w-full mb-4">
@@ -229,7 +230,7 @@ function Start() {
         </div>
       )}
 
-      <div>
+      <div className='px-2'>
         <Ads
           data-ad-format="auto"
           data-ad-slot="8433272954"

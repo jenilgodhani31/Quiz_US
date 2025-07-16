@@ -147,6 +147,9 @@ function PlayQuiz() {
           Your Score Is {rightAns}
         </div>
 
+
+      </div>
+      <div className='px-2'>
         <Ads
           data-ad-format="auto"
           data-ad-slot="8433272954"

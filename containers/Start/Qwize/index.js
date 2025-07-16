@@ -75,7 +75,6 @@ function Qwize() {
     return (
         <Layout title={"Quiz"}>
             <div className='px-2'>
-
                 <Ads
                     data-ad-format="auto"
                     data-ad-slot="8433272954"

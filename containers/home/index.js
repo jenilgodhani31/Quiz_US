@@ -6,7 +6,7 @@ import quizData from "data/otherData";
 import Modal from "@components/model";
 import Ads from "@components/Ads";
 
-export default function Quiz() {
+function Home() {
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [current, setCurrent] = useState(0);
   const [paragraph, setParagraph] = useState([])
@@ -55,17 +55,26 @@ export default function Quiz() {
 
   return (
     <Fragment>
-      <div className="flex flex-col items-center justify-start text-center px-3 pt-[50px]">
-
+      <div className='px-2'>
         <Ads
           data-ad-format="auto"
           data-ad-slot="8433272954"
           data-full-width-responsive="true"
         />
+      </div>
+      <div className="flex flex-col items-center justify-start text-center px-3 pt-[50px]">
+
+        <div className='px-2'>
+          <Ads
+            data-ad-format="auto"
+            data-ad-slot="8433272954"
+            data-full-width-responsive="true"
+          />
+        </div>
 
         <div className="text-2xl font-bold">Quick Start!</div>
         <div className="text-primary2 text-[15px]">
-          Answer 2 questions and win up to 100 coins.
+          Answer 2 questions and win up to 200 coins.
         </div>
 
         <div className="relative mt-[50px] flex flex-col bg-primary3 w-full p-4 rounded-xl">
@@ -120,16 +129,19 @@ export default function Quiz() {
           </div>
         ))}
 
+        <div className='px-2 mt-5' >
+          <Ads
+            data-ad-format="auto"
+            data-ad-slot="8433272954"
+            data-full-width-responsive="true"
+          />
+        </div>
 
         <div className="text-2xl mt-[30px] border-b-2 border-solid">
           Play Quiz and Win Coins!
         </div>
 
-        <Ads
-          data-ad-format="auto"
-          data-ad-slot="8433272954"
-          data-full-width-responsive="true"
-        />
+
 
         <ul className="list-disc p-4 text-left text-[15px] space-y-2 text-primary2">
           <li>Play quizzes in 25+ categories like GK, Sports, Bollywood, Business, Cricket & more!</li>
@@ -155,3 +167,5 @@ export default function Quiz() {
 
   );
 }
+
+export default Home

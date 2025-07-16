@@ -20,6 +20,13 @@ function Result() {
 
     return (
         <Fragment>
+            <div className='px-2'>
+                <Ads
+                    data-ad-format="auto"
+                    data-ad-slot="8433272954"
+                    data-full-width-responsive="true"
+                />
+            </div>
             {showPopup &&
                 <div className='flex flex-col items-center justify-center  h-screen'>
                     <div className='flex  flex-col gap-5 m-2 rounded-3xl p-2 border-[2px] border-white border-solid'>
@@ -60,11 +67,7 @@ function Result() {
 
             {!showPopup &&
                 <div className='flex flex-col items-center px-4 mt-[100px] '>
-                    <Ads
-                        data-ad-format="auto"
-                        data-ad-slot="8433272954"
-                        data-full-width-responsive="true"
-                    />
+
                     <div className='flex flex-col items-center justify-center p-4 bg-white  border-[2px] w-full rounded-2xl  border-white border-solid'>
                         <img
                             src='/assets/image/winner.gif'
@@ -92,13 +95,14 @@ function Result() {
                             </div>
                         </div>
                     ))}
+                    <div className='px-2 bg-white  mt-5' >
+                        <Ads
+                            data-ad-format="auto"
+                            data-ad-slot="8433272954"
+                            data-full-width-responsive="true"
+                        />
+                    </div>
 
-                    <Ads
-                        data-ad-format="auto"
-                        data-ad-slot="8433272954"
-                        data-full-width-responsive="true"
-                    />
-                    
                     <div className="text-2xl mt-[30px] border-b-2 border-solid">
                         {"Play Quiz and Win Coins!"}
                     </div>
