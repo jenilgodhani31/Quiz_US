@@ -51,7 +51,7 @@ function Home() {
     }, 800);
   };
 
-  
+  if (quizQuestions.length === 0) return <div></div>;
 
   return (
     <Fragment>
