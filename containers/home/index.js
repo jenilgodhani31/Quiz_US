@@ -51,11 +51,11 @@ function Home() {
     }, 800);
   };
 
-  if (quizQuestions.length === 0) return <div>Loading...</div>;
+  
 
   return (
     <Fragment>
-      <div className='px-2'>
+      <div className='px-2 pt-2'>
         <Ads
           data-ad-format="auto"
           data-ad-slot="8433272954"
