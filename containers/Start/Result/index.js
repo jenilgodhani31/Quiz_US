@@ -20,7 +20,7 @@ function Result() {
 
     return (
         <Fragment>
-            <div className='px-2'>
+            <div className='px-2 pt-2'>
                 <Ads
                     data-ad-format="auto"
                     data-ad-slot="8433272954"
