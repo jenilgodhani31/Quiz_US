@@ -74,44 +74,47 @@ function Qwize() {
     };
     return (
         <Layout title={"Quiz"}>
-            <div className='px-2'>
-                <Ads
-                    data-ad-format="auto"
-                    data-ad-slot="8433272954"
-                    data-full-width-responsive="true"
-                />
-            </div>
 
-            <div className='flex flex-col border-[1px] border-white border-solid rounded-xl m-4 p-3'>
-                <div className='flex items-center  gap-3'>
-                    <img
-                        className='w-[60px]'
-                        src={categoryImages[cat]?.[subcat]}
-                        alt="" />
-                    <div className='flex flex-col'>
-                        <div className='text-primary4'>{cat.toUpperCase()} | {subcat.toUpperCase()} </div>
-                        <div className='flex text-[20px] items-center gap-1'>{"Play and Win "} <span><BiCoinStack color='#ffb540' /></span> {"2000"}</div>
+            <div>
+                <div className='px-3 mt-5' >
+                    <Ads
+                        data-ad-format="auto"
+                        data-ad-slot="8433272954"
+                        data-full-width-responsive="true"
+                    />
+                </div>
+                <div className='flex flex-col border-[1px] border-white border-solid rounded-xl m-4 p-3'>
+                    <div className='flex items-center  gap-3'>
+                        <img
+                            className='w-[60px]'
+                            src={categoryImages[cat]?.[subcat]}
+                            alt="" />
+                        <div className='flex flex-col'>
+                            <div className='text-primary4'>{cat.toUpperCase()} | {subcat.toUpperCase()} </div>
+                            <div className='flex text-[20px] items-center gap-1'>{"Play and Win "} <span><BiCoinStack color='#ffb540' /></span> {"2000"}</div>
+                        </div>
+
                     </div>
 
+                    <div className='flex items-center justify-center'>
+
+                        <button
+                            onClick={() => router.push(`/playquiz?category=${encodeURIComponent(cat)}&subcategory=${encodeURIComponent(subcat)}`)}
+                            type='submit'
+                            className=" text-white mt-5 text-xl hover:text-primary4 border-[2px] border-primary4 hover:border-primary4 hover:bg-primary1  bg-primary4  rounded-full px-5 py-2 text-center">{"Play Now"}</button>
+
+                    </div>
+
+                    <ul className="list-disc mt-5 p-4 text-left text-[15px] space-y-2 text-primary2">
+                        <li>You got 200 seconds to answer all questions</li>
+                        <li>Answer as many questions as you can</li>
+                        <li>For Every Correct answer you will get 100 points and will loose -50 points on every Incorrect answer</li>
+                        <li>You can take help by using the lifelines present in the contest.</li>
+                        <li>Lifelines can be used for free or by using a given amount of coins for each lifeline.</li>
+                    </ul>
                 </div>
-
-                <div className='flex items-center justify-center'>
-
-                    <button
-                        onClick={() => router.push(`/playquiz?category=${encodeURIComponent(cat)}&subcategory=${encodeURIComponent(subcat)}`)}
-                        type='submit'
-                        className=" text-white mt-5 text-xl hover:text-primary4 border-[2px] border-primary4 hover:border-primary4 hover:bg-primary1  bg-primary4  rounded-full px-5 py-2 text-center">{"Play Now"}</button>
-
-                </div>
-
-                <ul className="list-disc mt-5 p-4 text-left text-[15px] space-y-2 text-primary2">
-                    <li>You got 200 seconds to answer all questions</li>
-                    <li>Answer as many questions as you can</li>
-                    <li>For Every Correct answer you will get 100 points and will loose -50 points on every Incorrect answer</li>
-                    <li>You can take help by using the lifelines present in the contest.</li>
-                    <li>Lifelines can be used for free or by using a given amount of coins for each lifeline.</li>
-                </ul>
             </div>
+
         </Layout>
     )
 }

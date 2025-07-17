@@ -8,15 +8,15 @@ function Scoreboard() {
     const { score } = router.query
     return (
         <Layout title={"quiz"}>
-            <div className='px-2 bg-white '>
-                <Ads
-                    data-ad-format="auto"
-                    data-ad-slot="8433272954"
-                    data-full-width-responsive="true"
-                />
-            </div>
-            <div className=''>
 
+            <div className=''>
+                <div className='px-2  '>
+                    <Ads
+                        data-ad-format="auto"
+                        data-ad-slot="8433272954"
+                        data-full-width-responsive="true"
+                    />
+                </div>
                 <div className='flex flex-col items-center m-2 justify-center p-4   border-[1px]  rounded-2xl  border-white border-solid'>
                     <img
                         src='/assets/image/trophy.gif'

@@ -55,7 +55,7 @@ function Home() {
 
   return (
     <Fragment>
-      <div className='px-2 pt-2'>
+      <div className='px-3 pt-2'>
         <Ads
           data-ad-format="auto"
           data-ad-slot="8433272954"
@@ -129,27 +129,34 @@ function Home() {
           </div>
         ))}
 
-        <div className='px-2 mt-5' >
-          <Ads
-            data-ad-format="auto"
-            data-ad-slot="8433272954"
-            data-full-width-responsive="true"
-          />
-        </div>
 
-        <div className="text-2xl mt-[30px] border-b-2 border-solid">
+      </div>
+
+      <div className='px-3 mt-5' >
+        <Ads
+          data-ad-format="auto"
+          data-ad-slot="8433272954"
+          data-full-width-responsive="true"
+        />
+      </div>
+
+      <div className="flex justify-center items-center">
+        <div className="text-center w-fit text-2xl border-b-2 border-solid">
           Play Quiz and Win Coins!
         </div>
+      </div>
 
 
 
-        <ul className="list-disc p-4 text-left text-[15px] space-y-2 text-primary2">
+      <div className="px-3">
+        <ul className="list-disc  p-4 text-left text-[15px] space-y-2 text-primary2">
           <li>Play quizzes in 25+ categories like GK, Sports, Bollywood, Business, Cricket & more!</li>
           <li>Compete with lakhs of other players!</li>
           <li>Win coins for every game</li>
           <li>Trusted by millions of other quiz enthusiasts like YOU!</li>
         </ul>
       </div>
+
 
       {isClient && (
         <Modal
